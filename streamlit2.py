@@ -5,16 +5,16 @@ def find_largest_number(num1, num2, num3):
     return largest
 
 def main():
-    st.title("Largest Number Finder")
-    st.write("Enter three numbers below to find the largest one.")
+    st.title("TDS W8 Largest Number")
+    st.write("Enter 3 numbers.")
 
-    num1 = st.number_input("Enter the first number:")
-    num2 = st.number_input("Enter the second number:")
-    num3 = st.number_input("Enter the third number:")
+    num1 = st.number_input("first number:")
+    num2 = st.number_input("second number:")
+    num3 = st.number_input("third number:")
 
-    if st.button("Find Largest"):
+    if st.button("find largest number"):
         largest = find_largest_number(num1, num2, num3)
-        st.success(f"The largest number is: {largest}")
+        st.success(f"largest is: {largest}")
 
 if __name__ == "__main__":
     main()
